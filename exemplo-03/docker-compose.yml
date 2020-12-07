@@ -1,0 +1,35 @@
+version: "3"
+services:
+  php:
+    build:
+      context: "./php"
+    volumes:
+      - "./php/www:/var/www/html"
+    ports:
+      - "80"
+    networks:
+      - "exemplo"
+    environment:  
+           - SESSION_HANDLER=redis
+           - SESSION_PATH=tcp://redis:${REDIS_PORT}  
+           - SESSION_MAX_TIME_LIFE=86400
+  nginx:
+    image: "nginx"
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+    depends_on:
+      - php
+    ports:
+      - "8000:8000"
+    networks:
+      - "exemplo"
+  redis:
+    image: redis:4-alpine
+    container_name: redis
+    ports:
+        - ${REDIS_PORT}:${REDIS_PORT}
+    networks: 
+      - exemplo
+
+networks:
+  exemplo:
