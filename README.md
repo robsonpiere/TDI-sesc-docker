@@ -57,6 +57,8 @@ docker-compose up
 
 - [Docker Hub](https://hub.docker.com)
 
+- [Livro em PT-br](https://leanpub.com/dockerparadesenvolvedores)
+
 - [Play with docker](https://labs.play-with-docker.com)
 
 
