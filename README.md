@@ -1,4 +1,4 @@
-![Docker](https://img.shields.io/badge/-Docker-319ded?style=for-the-badge&logo=docker&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-319ded?logo=docker&logoColor=white)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Frobsonpiere%2FTDI-sesc-docker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Acessos&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # TDI-sesc-docker 🐳🐳🐳
